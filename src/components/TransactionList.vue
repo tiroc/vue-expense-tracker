@@ -8,7 +8,7 @@
         </li>
         <li class="plus">
             Paycheck
-            <span>+R50</span>
+            <span>+R500</span>
             <button class="delete-btn">x</button>
         </li>
     </ul>
