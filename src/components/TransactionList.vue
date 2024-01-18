@@ -12,14 +12,14 @@
 
 <script>
     export default{
-        data(){
-            return {
-                transactions: [
+        setup(){
+            const transactions = [
                     {id: 1, text: 'Flower', amount: -20},
                     {id: 2, text: 'Takeout', amount: -99},
                     {id: 3, text: 'Old PC', amount: +900},
-                ],
+                ];
+            return {transactions,
             };
-        }
-    }
+        },
+    };
 </script>
