@@ -9,3 +9,13 @@
         </li>
     </ul>
 </template>
+<script setup>
+    //defineProps does not need to be imported
+    //import { defineProps } from 'vue'; 
+    const props = defineProps({
+        transactions: {
+            type: Array,
+            required: true,
+        }
+        });
+</script>
