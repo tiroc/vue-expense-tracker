@@ -13,11 +13,17 @@
   import TransactionList from './components/TransactionList.vue';
   import AddTransaction from './components/AddTransaction.vue';
 
-  import   { ref } from 'vue';
+  import   { ref, computed } from 'vue';
 
   const transactions = ref([
     {id: 1, text: 'Flower', amount: -20},
     {id: 2, text: 'Takeout', amount: -99},
     {id: 3, text: 'Old PC', amount: +900},
   ]);
+  const total = computed(()=>{
+    return transactions.value.reduce((acc, transaction)=>{
+      return acc + transaction.amount;
+    }, 0);
+    console.log(total);
+  });
 </script>
